@@ -6,7 +6,7 @@ apply plugin: 'com.neenbedankt.android-apt'
 //apply plugin: 'io.fabric'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 23
     buildToolsVersion '23.0.3'
 
     defaultConfig {

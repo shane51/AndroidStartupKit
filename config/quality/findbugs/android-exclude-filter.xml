@@ -10,7 +10,7 @@
     <Match>
         <Class name="~.*\.*Test" />
         <Not>
-            <Bug code="IJU" />
+            <Bug status="IJU" />
         </Not>
     </Match>
 

@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.thoughtworks.startup.R;
 import com.thoughtworks.startup.ui.base.BaseActivity;
 import com.thoughtworks.startup.ui.github.GitHubListActivity;
+import com.thoughtworks.startup.ui.signup.SignUpActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -67,6 +68,12 @@ public class SignInActivity extends BaseActivity implements SignInView {
         final String email = mEmailView.getText().toString();
         final String password = mPasswordView.getText().toString();
         mSignInPresenter.signIn(email, password);
+    }
+
+    @OnClick(R.id.link_signup)
+    void navToSignUp() {
+        Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
+        startActivity(intent);
     }
 
     @Override

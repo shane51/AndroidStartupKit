@@ -2,15 +2,15 @@ package com.thoughtworks.startup.data.model;
 
 public class SignInResponse {
 
-    private Integer code;
+    private Integer status;
     private String msg;
 
-    public Integer getCode() {
-        return code;
+    public Integer getStatus() {
+        return status;
     }
 
-    public void setCode(Integer code) {
-        this.code = code;
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public String getMsg() {

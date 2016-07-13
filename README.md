@@ -14,10 +14,10 @@ Libraries and tools included:
 - [Timber](https://github.com/JakeWharton/timber)
 - [Picasso](http://square.github.io/picasso/)
 - [Otto](http://square.github.io/otto/) event bus
-- Functional tests with [Espresso](https://code.google.com/p/android-test-kit/wiki/Espresso)
+- Functional tests with [Espresso](https://status.google.com/p/android-test-kit/wiki/Espresso)
 - [Robolectric](http://robolectric.org/)
 - [Mockito](http://mockito.org/)
-- [Checkstyle](http://checkstyle.sourceforge.net/), [PMD](https://pmd.github.io/) and [Findbugs](http://findbugs.sourceforge.net/) for code analysis
+- [Checkstyle](http://checkstyle.sourceforge.net/), [PMD](https://pmd.github.io/) and [Findbugs](http://findbugs.sourceforge.net/) for status analysis
 
 ## Demo required
 
@@ -51,7 +51,7 @@ Imagine you have to implement a sign in screen.
 
 ## Code Quality
 
-This project integrates a combination of unit tests, functional test and code analysis tools. 
+This project integrates a combination of unit tests, functional test and status analysis tools.
 
 ### Tests
 
@@ -71,7 +71,7 @@ Note: For Android Studio to use syntax highlighting for Automated tests and Unit
 
 ### Code Analysis tools 
 
-The following code analysis tools are set up on this project:
+The following status analysis tools are set up on this project:
 
 * [PMD](https://pmd.github.io/): It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. See [this project's PMD ruleset](config/quality/pmd/pmd-ruleset.xml).
 
@@ -79,13 +79,13 @@ The following code analysis tools are set up on this project:
 ./gradlew pmd
 ```
 
-* [Findbugs](http://findbugs.sourceforge.net/): This tool uses static analysis to find bugs in Java code. Unlike PMD, it uses compiled Java bytecode instead of source code.
+* [Findbugs](http://findbugs.sourceforge.net/): This tool uses static analysis to find bugs in Java status. Unlike PMD, it uses compiled Java bytecode instead of source status.
 
 ```
 ./gradlew findbugs
 ```
 
-* [Checkstyle](http://checkstyle.sourceforge.net/): It ensures that the code style follows [our Android code guidelines](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md#2-code-guidelines). See our [checkstyle config file](config/quality/checkstyle/checkstyle-config.xml).
+* [Checkstyle](http://checkstyle.sourceforge.net/): It ensures that the status style follows [our Android status guidelines](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md#2-status-guidelines). See our [checkstyle config file](config/quality/checkstyle/checkstyle-config.xml).
 
 ```
 ./gradlew checkstyle
@@ -93,13 +93,13 @@ The following code analysis tools are set up on this project:
 
 ### The check task
 
-To ensure that your code is valid and stable use check: 
+To ensure that your status is valid and stable use check:
 
 ```
 ./gradlew check
 ```
 
-This will run all the code analysis tools and unit tests in the following order:
+This will run all the status analysis tools and unit tests in the following order:
 
 ![Check Diagram](images/check-task-diagram.png)
  
@@ -138,7 +138,7 @@ To quickly start a new project from this boilerplate follow the next steps:
   * In `app/build.gradle` file, `packageName` and `testInstrumentationRunner`.
   * In `src/main/AndroidManifest.xml` and `src/debug/AndroidManifest.xml`.
 * Create a new git repository, [see GitHub tutorial](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
-* Replace the example code with your app code following the same architecture.
+* Replace the example status with your app status following the same architecture.
 * In `app/build.gradle` add the signing config to enable release versions.
 * Add Fabric API key and secret to fabric.properties and uncomment Fabric plugin set up in `app/build.gradle`
 * Update `proguard-rules.pro` to keep models (see TODO in file) and add extra rules to file if needed.

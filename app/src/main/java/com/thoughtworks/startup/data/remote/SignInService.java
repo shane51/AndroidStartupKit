@@ -12,12 +12,12 @@ import rx.Observable;
 
 public interface SignInService {
     
-    String ENDPOINT = "http://10.29.2.74:3000"; // 10.29.2.74
-
-    int SUCCESS_CODE = 0;
+//    String ENDPOINT = "http://192.168.1.3:3000";
+    String ENDPOINT = "http://10.29.2.46:3000";
+    int SUCCESS_CODE = 1;
 
     @FormUrlEncoded
-    @POST("/login")
+    @POST("api/login")
     Observable<SignInResponse> signIn(@Field("email") String email, @Field("password") String password);
 
     class Creator {

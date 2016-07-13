@@ -5,6 +5,7 @@ import com.thoughtworks.startup.injection.module.ActivityModule;
 import com.thoughtworks.startup.ui.github.GitHubListActivity;
 import com.thoughtworks.startup.ui.main.MainActivity;
 import com.thoughtworks.startup.ui.signin.SignInActivity;
+import com.thoughtworks.startup.ui.signup.SignUpActivity;
 
 import dagger.Component;
 
@@ -20,5 +21,7 @@ public interface ActivityComponent {
     void inject(SignInActivity signInActivity);
 
     void inject(GitHubListActivity gitHubListActivity);
+
+    void inject(SignUpActivity signUpActivity);
 
 }

@@ -11,9 +11,10 @@ import rx.Observable;
 
 public interface GitHubService {
 
-    String ENDPOINT = "https://api.github.com";
+//    String ENDPOINT = "http://192.168.1.3:3000";
+    String ENDPOINT = "http://10.29.2.46:3000";
 
-    @GET("/search/users")
+    @GET("/proxy")
     Observable<GitHubUserList> getGitHubUserList(@Query("q") String q);
 
     class Creator {

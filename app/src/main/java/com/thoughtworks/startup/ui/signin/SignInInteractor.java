@@ -38,7 +38,7 @@ public class SignInInteractor {
 
             @Override
             public void onNext(SignInResponse signInResponse) {
-                if (signInResponse.getCode() ==  SignInService.SUCCESS_CODE) {
+                if (signInResponse.getStatus() ==  SignInService.SUCCESS_CODE) {
                     callback.onSignInSuccessful();
                 } else {
                     callback.onSignInFailed(signInResponse.getMsg());
